@@ -7,8 +7,9 @@ Transfer learning is a field which study how we can improve a task (e.g. classif
 domain. If we have a classifier trained in a dataset, we would like to use this calssifier in a different dataset with different but related 
 distribution. A complete survey can be found in [A Survey on Transfer Learning] (http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5288526&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5288526). 
 
-A way to do this is to reweight the data using *w = g(x) / f(x)* where *f(x)* is the target domain and *g(x)* is the source domain. Then we minimize *sum(g(x)/f(x) * f(x) * l(x,y)*. A similar 
-task in physics is known as event reweighting and is used to account for differences between simulated and real data.
+A way to do this is to reweight the data using *w = g(x) / f(x)* where *f(x)* is the target domain distribution and *g(x)* is the source domain distribution. 
+Then we minimize *sum(g(x)/f(x) * f(x) * l(x,y))*. A similar 
+task in physics is known as *event reweighting* and is used to account for differences between simulated and real data.
 
 Using approximated likelihood ratios we can replace *g(x) / f(x)* by *f(s|domain)/f(s|target)* where *s* is the score of a classifier trained to classify between source and domain data.
 
@@ -22,7 +23,7 @@ We train a *multilayer perceptron* to classify between data generated from the d
 
 We can compare the density ratios obtained with the real ratio (in this case known).
 
-([1D_ratios](https://github.com/jgpavez/transfer_learning/blob/master/plots/mlp/all_train_mlp_ratio.png)).
+![1D_ratios](https://github.com/jgpavez/transfer_learning/blob/master/plots/mlp/all_train_mlp_ratio.png).
 
 Finally, the source distribution and weighted target distribution (with real and approximated ratios) are shown next.
 
@@ -40,7 +41,7 @@ We train a *boosted decision tree* to classify between data generated from the d
 
 ![10D_score](https://github.com/jgpavez/transfer_learning/blob/master/plots/xgboost/full_all_xgboost_hist.png)
 
-The source distribution and weighted target distribution (with real and approximated ratios) for the previously shown 4 features area computed.
+The source distribution and weighted target distribution using approximated ratios, for the previously shown 4 features area computed.
 
 
  feature 0                   | feature 1
