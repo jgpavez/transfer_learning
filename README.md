@@ -1,4 +1,4 @@
-## Decomposing tests between mixture models into their components 
+## Approximated density ratios for Transfer Learning
 
 This work will study how approximated likelihood ratios [Approximating Likelihood Ratios with Calibrated Discriminative Classifiers]
 (http://arxiv.org/abs/1506.02169) can be used in transfer learning (or domain adaptation) tasks.
