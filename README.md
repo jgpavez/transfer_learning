@@ -45,8 +45,8 @@ The source distribution and weighted target distribution (with real and approxim
 
  feature 0                   | feature 1
 :-------------------------:|:-------------------------:
-<img src="https://github.com/jgpavez/systematics/blob/master/plots/xgboost/all_transf_xgboost_hist_v0.png" width="350">  | <img src="https://github.com/jgpavez/systematics/blob/master/plots/xgboost/all_transf_xgboost_hist_v1.png" width="350" >
+<img src="https://github.com/jgpavez/transfer_learning/blob/master/plots/xgboost/all_transf_xgboost_hist_v0.png" width="350">  | <img src="https://github.com/jgpavez/transfer_learning/blob/master/plots/xgboost/all_transf_xgboost_hist_v1.png" width="350" >
  feature 7                   | feature 8
-<img src="https://github.com/jgpavez/systematics/blob/master/plots/xgboost/all_transf_xgboost_hist_v7.png" width="350">  | <img src="https://github.com/jgpavez/systematics/blob/master/plots/xgboost/all_transf_xgboost_hist_v8.png" width="350" >
+<img src="https://github.com/jgpavez/transfer_learning/blob/master/plots/xgboost/all_transf_xgboost_hist_v7.png" width="350">  | <img src="https://github.com/jgpavez/transfer_learning/blob/master/plots/xgboost/all_transf_xgboost_hist_v8.png" width="350" >
 
 Again, the distributions for each of the features are pretty similar with the weighted distributions.
